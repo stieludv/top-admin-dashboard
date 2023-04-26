@@ -1,0 +1,21 @@
+.container {
+    background-color: lavender;
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: clamp(220px, 250px, 300px) 1fr;
+    grid-template-rows: minmax(120px, 180px) 1fr;
+}
+
+.sidebar {
+    grid-row: 1 / span 2;
+    background-color: peachpuff;
+}
+
+.header {
+    grid-column: 2;
+    background-color: pink;
+}
+
+.main-content {
+    background-color: powderblue;
+}

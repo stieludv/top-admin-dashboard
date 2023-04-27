@@ -1,5 +1,32 @@
+:root {
+    /* https://tailwindcss.com/docs/customizing-colors: Lime & Amber */
+    /* Primary Color */
+    --main-bright-color: #84cc16;
+    --main-dark-color: #3f6212;
+    --main-super-dark-color: #1a2e05;
+    --main-light-color: #d9f99d;
+    --main-super-light-color: #ecfccb;
+    /* Secondary Color */
+    --main-bright-secondary-color: #f59e0b;
+    --main-dark-secondary-color: #92400e;
+    --main-super-dark-secondary-color: #451a03;
+    --main-light-secondary-color: #fde68a;
+    --main-super-light-secondary-color: #fffbeb;
+    /* Text Color */
+    --text-color-main: black;
+    --text-color-secondary: white;
+
+}
+
+button {
+    background-color: var(--main-bright-secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 100px;
+}
+
 .container {
-    background-color: lavender;
     min-height: 100svh;
     display: grid;
     grid-template-columns: clamp(220px, 250px, 300px) 1fr;
@@ -8,14 +35,55 @@
 
 .sidebar {
     grid-row: 1 / span 2;
-    background-color: peachpuff;
+    background-color: var(--main-bright-color);
+    color: var(--text-color-secondary);
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    font-size: 1.6rem;
 }
 
 .header {
     grid-column: 2;
-    background-color: pink;
+    background-color: var(--main-super-light-secondary-color);
+    box-shadow: 0px 10px 5px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bottom {
+
 }
 
 .main-content {
-    background-color: powderblue;
+    display: grid;
+    background-color: var(--main-super-light-color);
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 2rem 4rem 2rem;
+    gap: 2rem;
+}
+
+.projects {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 50%));
+    gap: 2rem;
+}
+
+.project {
+
+}
+
+.announcements {
+    grid-column: -2;
+}
+
+.trending {
+    grid-column: -2;
 }

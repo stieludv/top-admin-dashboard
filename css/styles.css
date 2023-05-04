@@ -10,6 +10,11 @@
     --text-color-main: black;
     --text-color-secondary: white;
 
+    /* --primary-color-one: #574476;
+    --primary-color-two: #1DC9B7;
+    --secondary-color-one: #FD3995;
+    --secondary-color-two: #39A1F4;
+    --secondary-color-three: #F5A623; */
 }
 
 button {
@@ -148,9 +153,14 @@ button svg {
 
 .header-profile {
     display: grid;
-    grid-template-columns: 60px auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
     gap: 1rem;
+}
+
+.header-profile img {
+    height: 42px;
+    aspect-ratio: 1 / 1;
 }
 
 .header-profile p {
@@ -166,6 +176,10 @@ button svg {
     display: grid; 
     grid-template-columns: 60px 1fr;
     gap: 1rem;
+}
+
+.hello-there-profile img {
+
 }
 
 .hello-there-message {

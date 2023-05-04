@@ -21,10 +21,19 @@ img {
     border-radius: 6px;
 }
 
+h1, h2, h3, h4, .h-styling {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Comme', sans-serif;
+}
+
 button {
     background-color: var(--primary-color-one);
     color: var(--text-color-secondary);
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 0.5rem 0.6rem 0.5rem;
     cursor: pointer;
     transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
     border: solid 2px var(--primary-color-one);
@@ -62,7 +71,7 @@ button svg {
     grid-row: 1 / span 2;
     background-color: var(--primary-color-one);
     color: var(--text-color-secondary);
-    font-weight: bold;
+    font-weight: 600;
     padding-left: 10px;
 }
 
@@ -79,12 +88,12 @@ button svg {
 }
 
 .sidebar .branding > h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .sidebar ul {
     list-style: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding-left: 5px;
 }
 
@@ -115,6 +124,10 @@ button svg {
     grid-template-columns: 1fr 2rem auto;
     align-items: center; 
     gap: 1rem;
+}
+
+.header-top p {
+    font-weight: bold;
 }
 
 .header-top > div > svg {
@@ -174,12 +187,14 @@ button svg {
 .header-bottom {
     grid-template-columns: 1fr auto;
     align-items: center;
+    gap: 1rem;
 }
 
 .hello-there-profile {
     display: grid; 
     grid-template-columns: 60px 1fr;
     gap: 1rem;
+    align-items: center;
 }
 
 .hello-there-profile img {
@@ -190,6 +205,11 @@ button svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: 600;
+}
+
+.hello-there-message h2 {
+    font-size: 1.2rem;
 }
 
 .hello-there-message > h2, p {
@@ -203,7 +223,7 @@ button svg {
 }
 
 .actions > button {
-    width: 110px;
+    width: 120px;
 }
 
 .main-content {
@@ -218,7 +238,7 @@ button svg {
 }
 
 .main-content p {
-    color: gray;
+    color: rgb(94, 94, 94);
 }
 
 .projects {
@@ -298,7 +318,7 @@ button svg {
 
 .profile-card > p:nth-child(2) {
     grid-row: 1;
-    font-weight: bold;
+    font-weight: 600;
     color: black;
 }
 

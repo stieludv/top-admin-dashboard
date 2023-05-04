@@ -260,11 +260,29 @@ button svg {
     padding: 0 2rem 1rem 2rem;
     background-color: var(--text-color-secondary);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto auto 1fr;
 }
 
 .project h3 {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
+}
+
+.project div {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: last baseline;
+    gap: 1rem;
+    padding: 0.8rem 0 1rem 0;
+}
+
+.project div svg {
+    height: 1.6rem;
+}
+
+.project div svg:first-child {
+    justify-self: right;
 }
 
 .announcements {
